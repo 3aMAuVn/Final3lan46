@@ -32,11 +32,7 @@
 {% endif %}
 
 <section class="mmm-hero {{ page.hero_class }}" aria-label="Page hero">
-
-  {{/* ── Star field canvas ── */}}
   <div class="mmm-hero__sky" aria-hidden="true"></div>
-
-  {{/* ── Main row ── */}}
   <div class="mmm-hero__inner container">
 
     <img class="mmm-hero__logo"
@@ -84,7 +80,7 @@
         </a>
       </div>
 
-    </div>{{/* /.mmm-hero__copy */}}
+    </div>
 
     <img class="mmm-hero__hat"
          src="{{ '/assets/hat-no-background.png' | relative_url }}"
@@ -92,10 +88,9 @@
          aria-hidden="true"
          loading="eager">
 
-  </div>{{/* /.mmm-hero__inner */}}
+  </div>
 
   {% if page.show_hero_pills %}
-  {{/* ── Feature pills row (home page only) ── */}}
   <div class="mmm-hero__pills container" aria-label="Key features">
 
     <div class="mmm-pill" style="--pill-bg:#86c9e9;--pill-icon-bg:#4aa1de">
@@ -147,7 +142,7 @@
       </span>
     </div>
 
-  </div>{{/* /.mmm-hero__pills */}}
+  </div>
   {% endif %}
 
 </section>
