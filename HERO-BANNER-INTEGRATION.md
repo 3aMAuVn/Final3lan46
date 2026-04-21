@@ -97,3 +97,12 @@ Just delete `show_hero_pills: true` from `index.html`'s front matter.
 | 520–900 px | Logo left, copy + hat stacked right |
 | < 520 px  | Logo left, copy right; hat hidden; pills 2-col grid |
 
+
+---
+
+## Version history
+
+**v2 (fix)** — Removed invalid `{{/* ... */}}` comment syntax that was
+breaking the Jekyll build. If you installed v1 and your site was
+failing, replace `_includes/hero-starry-banner.html` with the v2 file
+and the build will work.
